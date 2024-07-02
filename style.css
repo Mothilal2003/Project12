@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+img{
+    cursor: pointer;
+}
+
+.header {
+    background-color: rgb(34, 54, 69);
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 16.8px 0;
+    transition: .5s;
+}
+
+h2 {
+    font-size: 13px;
+}
+
+.t2,
+.t4,
+.t10,
+.t11 {
+    color: rgb(205, 255, 85);
+}
+
+.t3,
+.t4,
+.t5,
+.t6,
+.t7,
+.t8,
+.t9,
+.t10,
+.t11,
+.t12,
+.t13,
+.t14 {
+    cursor: pointer;
+}
+
+i {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.t1,
+.t6,
+.t7,
+.t9,
+.tweet {
+    color: #ffd940;
+}
+
+.color1:hover {
+    color: rgb(45, 171, 191);
+    transition: .5s;
+}
+
+.t12,
+.t13,
+.t14 {
+    font-weight: 100;
+}
+
+.insta {
+    color: rgb(205, 255, 85);
+}
+
+.navbar{
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    
+}
+
+.menu {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    list-style: none;
+    /* border-top: 5px solid blue; */
+    /* width: 100px; */
+    /* margin-left: 20px; */
+}
+
+.menu>li>a {
+    color: #000;
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.menu ul {
+    height: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    transition: all .5s ease;
+    top: 35px;
+    width: 100%;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.menu>li>a:hover{
+    color: rgb(45, 171, 191) ;
+    transition: .5s;
+}
+
+.menu>li>ul>li>ul>li>a{
+    margin-right: -10%;
+}
+
+.menu li:hover ul {
+    height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1.3s;
+    /* border-left: 5px solid blue;  */
+}
+
+.menu ul a {
+    color: #000;
+    display: block;
+    text-decoration: none;
+    border-bottom: 2px solid #cac8c8;
+    text-wrap: nowrap;
+    padding: 10px;
+    padding-top: 10px;
+    width: 160%;
+    box-shadow: 0 0 10px white;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.menu ul a:hover{
+    color: rgb(45, 171, 191) ;
+    border-bottom: 2px solid rgb(45, 171, 191);
+    transition: .5s;
+    /* box-shadow: .2px 0 5px #eee; */
+}
+
+
+
+/* .menu>li>ul::after {
+    content: '';
+    position: absolute;   
+    width: 3px;
+    height: 50px;
+    background: rgb(45, 171, 191);
+    left: 0;
+    top: 0;
+    margin-top: -80%;
+    margin-left: 50%;
+} */
+
+.menu>li>ul::before{
+    /* background: white; */
+}
